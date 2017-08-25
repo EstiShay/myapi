@@ -15,6 +15,7 @@ Creating and reading new records
 ![Show clients](/src/main/resources/public/images/clientsall.jpg "Postman display of all clients")
 ![Adding new attorney](/src/main/resources/public/images/attorneysnew.jpg "Postman creation of new attorney")
 ![Show attorneys](/src/main/resources/public/images/attorneysall.jpg "Postman display of all attorneys")
+![Custom exception message for unknown ID](/src/main/resources/public/images/customExceptionMsg.jpg "Custom message for unknown record ID")
 
 ## Setup/Installation Requirements
 
