@@ -1,4 +1,4 @@
-# My Api
+# Legal Aid Clinic Management API
 
 #### Java project for Epicodus, August 2017
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-Independent project to create an API.
+Independent project to create an API.  This is a case management system for a legal aid clinic.  Objects include cases, clients, and attorneys.
 
 ## Demonstrated Functionality in Postman
 (screenshots coming soon)
@@ -18,8 +18,21 @@ Independent project to create an API.
 
 ## Specifications
 
-| Behavior | Example Input | Example Output |
-| ------------- | ------------- | ------------- |
+User stories:
+* As an ADMIN, I want to:
+    * add new attorneys
+    * delete all types of records
+    
+* As a LEGAL ASSISTANT, I want to: 
+    * add new clients
+    * add new cases
+    * update cases
+    * mark cases as closed or reopen them
+    
+* As an ATTORNEY, I want to:
+    * find all of my cases
+    * find all of the cases associated with one of my clients
+    * see when the next brief or filing is due, or when I next need to appear in court
 
 
 
