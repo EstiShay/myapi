@@ -24,12 +24,20 @@ CREATE TABLE IF NOT EXISTS casescustody (
   id int PRIMARY KEY auto_increment,
   clientid INTEGER,
   createdat TIMESTAMP,
-  caseopen BOOLEAN
+  caseopen BOOLEAN,
+  opposingparty VARCHAR,
+  custodysituation VARCHAR,
+  numchildren INTEGER,
+  nexthearing DATE
 );
 
 CREATE TABLE IF NOT EXISTS caseshousing (
   id int PRIMARY KEY auto_increment,
   clientid INTEGER,
   createdat TIMESTAMP,
-  caseopen BOOLEAN
+  caseopen BOOLEAN,
+  typeofdispute VARCHAR,
+  opposingparty VARCHAR,
+  clienttenant BOOLEAN,
+  caseiseviction BOOLEAN
 );
