@@ -12,3 +12,24 @@ CREATE TABLE IF NOT EXISTS clients (
   contact VARCHAR,
   financialneedverified BOOLEAN
 );
+
+CREATE TABLE IF NOT EXISTS legalcases (
+  id int PRIMARY KEY auto_increment,
+  clientid INTEGER,
+  createdat TIMESTAMP,
+  caseopen BOOLEAN
+);
+
+CREATE TABLE IF NOT EXISTS casescustody (
+  id int PRIMARY KEY auto_increment,
+  clientid INTEGER,
+  createdat TIMESTAMP,
+  caseopen BOOLEAN
+);
+
+CREATE TABLE IF NOT EXISTS caseshousing (
+  id int PRIMARY KEY auto_increment,
+  clientid INTEGER,
+  createdat TIMESTAMP,
+  caseopen BOOLEAN
+);
