@@ -9,7 +9,12 @@
 Independent project to create an API.  This is a case management system for a legal aid clinic.  Objects include cases, clients, and attorneys.
 
 ## Demonstrated Functionality in Postman
-(screenshots coming soon)
+Creating and reading new records
+
+![Adding new client](/src/main/resources/public/images/clientsnew.jpg "Postman creation of new client")
+![Show clients](/src/main/resources/public/images/clientsall.jpg "Postman display of all clients")
+![Adding new attorney](/src/main/resources/public/images/attorneysnew.jpg "Postman creation of new attorney")
+![Show attorneys](/src/main/resources/public/images/attorneysall.jpg "Postman display of all attorneys")
 
 ## Setup/Installation Requirements
 
