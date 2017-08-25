@@ -15,6 +15,7 @@ Independent project to create an API.  This is a case management system for a le
 
 * Clone the repo
 * Run App.java
+* Access routes via Postman
 
 ## Specifications
 
@@ -27,12 +28,13 @@ User stories:
     * add new clients
     * add new cases
     * update cases
+    * update client records
     * mark cases as closed or reopen them
     
 * As an ATTORNEY, I want to:
     * find all of my cases
     * find all of the cases associated with one of my clients
-    * see when the next brief or filing is due, or when I next need to appear in court
+    * see when the next brief or filing is due, or when I next need to appear in court for a specific case
 
 
 
