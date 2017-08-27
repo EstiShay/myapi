@@ -10,6 +10,7 @@ public interface ClientDao {
 
     //create
     void add(Client client);
+    void addCaseToClient(LegalCase legalCase, Client client);
 
     //read
     Client findById(int id);

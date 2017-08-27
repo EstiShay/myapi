@@ -41,3 +41,10 @@ CREATE TABLE IF NOT EXISTS caseshousing (
   clienttenant BOOLEAN,
   caseiseviction BOOLEAN
 );
+
+CREATE TABLE IF NOT EXISTS cases_attorneys (
+  id int PRIMARY KEY auto_increment,
+  caseid INTEGER,
+  attorneyid INTEGER
+);
+

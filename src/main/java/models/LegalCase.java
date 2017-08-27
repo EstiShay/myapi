@@ -6,17 +6,16 @@ import java.time.LocalDateTime;
 
 public class LegalCase {
 
-    private int id;
-    private int clientId;
-    private Timestamp createdAt;
-    private boolean caseOpen;
+    public int id;
+    public int clientId;
+    public Timestamp createdAt;
+    public boolean caseOpen;
 
-    public LegalCase(int clientId){
-        this.clientId = clientId;
-        this.createdAt = Timestamp.valueOf(LocalDateTime.now());
-        this.caseOpen = true;
-    }
-
+//    public LegalCase(int clientId){
+//        this.clientId = clientId;
+//        this.createdAt = Timestamp.valueOf(LocalDateTime.now());
+//        this.caseOpen = true;
+//    }
 
     public int getId() {
         return id;

@@ -1,6 +1,8 @@
 package dao;
 
+import models.CaseHousing;
 import models.Client;
+import models.LegalCase;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,12 +15,14 @@ public class Sql2oClientDaoTest {
 
     private Connection conn;
     private Sql2oClientDao clientDao;
+    private Sql2oLegalCaseDao legalCaseDao;
 
     @Before
     public void setUp() throws Exception {
         String connectionString = "jdbc:h2:mem:testing;INIT=RUNSCRIPT from 'classpath:db/create.sql'";
         Sql2o sql2o = new Sql2o(connectionString, "", "");
         clientDao = new Sql2oClientDao(sql2o);
+        legalCaseDao = new Sql2oLegalCaseDao(sql2o);
         conn = sql2o.open();
     }
 
@@ -72,6 +76,12 @@ public class Sql2oClientDaoTest {
         assertEquals("Cal Hudson", clientDao.findById(2).getName());
     }
 
+    @Test
+    public void addCaseToClient(){
+        Client newClient = setUpClient();
+
+    }
+
 
     //helper
     public Client setUpClient(){
@@ -79,5 +89,9 @@ public class Sql2oClientDaoTest {
     }
     public Client setUpClient2(){
         return new Client("Cal Hudson", "555-555-9876, chudson@maquis.com", true);
+    }
+
+    public CaseHousing setUpCase(){
+        return new CaseHousing(1, "Landlord-tenant", "Acme Property Management", true, true);
     }
 }

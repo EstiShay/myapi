@@ -1,5 +1,6 @@
 package dao;
 
+import models.Attorney;
 import models.LegalCase;
 
 import java.util.List;
@@ -9,11 +10,12 @@ public interface LegalCaseDao {
 
     //create
     void add(LegalCase legalCase);
-    void addClientAndAttorneyToACase(int caseId, int attorneyId, int clientId);
 
     //read
     List<LegalCase> getAll();
     LegalCase findById(int id);
+    List<LegalCase> getAllCasesForAClient(int clientId);
+    List<Attorney> getAllAttorneysOnACase(int id);
 
     //update
     //void update(int clientId, boolean caseOpen, int id);

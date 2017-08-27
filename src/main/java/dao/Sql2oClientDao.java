@@ -29,6 +29,20 @@ public class Sql2oClientDao implements ClientDao{
         } catch (Sql2oException ex){
             System.out.println(ex);
         }
+    }
+
+
+    @Override
+    public void addCaseToClient(LegalCase legalCase, Client client){
+        String sql = "INSERT INTO cases_clients (caseid, clientid) VALUES (:caseid, :clientid)";
+        try (Connection con = sql2o.open()) {
+            con.createQuery(sql)
+                    .addParameter("caseid", legalCase.getId())
+                    .addParameter("clientid", client.getId())
+                    .executeUpdate();
+        } catch (Sql2oException ex){
+            System.out.println(ex);
+        }
 
     }
 

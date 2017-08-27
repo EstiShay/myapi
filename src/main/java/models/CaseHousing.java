@@ -1,5 +1,8 @@
 package models;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+
 public class CaseHousing extends LegalCase {
 
     private String typeOfDispute;
@@ -8,7 +11,10 @@ public class CaseHousing extends LegalCase {
     private boolean caseIsEviction;
 
     public CaseHousing(int clientId, String typeOfDispute, String opposingParty, boolean clientTenant, boolean caseIsEviction) {
-        super(clientId);
+        //super(clientId);
+        this.clientId = clientId;
+        this.createdAt = Timestamp.valueOf(LocalDateTime.now());
+        this.caseOpen = true;
         this.typeOfDispute = typeOfDispute;
         this.opposingParty = opposingParty;
         this.clientTenant = clientTenant;
